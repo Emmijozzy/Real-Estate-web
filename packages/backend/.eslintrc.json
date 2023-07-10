@@ -20,19 +20,17 @@
     "rules": {
         "prettier/prettier": "error",
         "@typescript-eslint/indent": ["error", 2],
-        "@typescript-eslint/no-unused-vars": "error",
         "@typescript-eslint/no-explicit-any": "error",
-        "indent": [
-            "error",
-            2
+        "quotes": ["error", "double"],
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/no-inferrable-types": [
+          "warn", {
+            "ignoreParameters": true
+          }
         ],
-        "linebreak-style": [
-            "error",
-            "unix"
-        ],
-        "semi": [
-            "error",
-            "always"
-        ]
+        "@typescript-eslint/no-unused-vars": "warn",
+        "indent": [ "error", 2 ],
+        "linebreak-style": [ "error", "unix" ],
+        "semi": [ "error", "always" ]
     }
 }

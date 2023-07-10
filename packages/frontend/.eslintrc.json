@@ -37,33 +37,29 @@
         "import/core-modules": ["Colors"]
     },
     "rules": {
+        "prettier/prettier": "error",
+        "eqeqeq": ["warn", "smart"],
+        "react/jsx-key": "error",
         "import/extensions": 0,
 		"react/prop-types": 0,
         "import/prefer-default-export": 0,
         "import/no-extraneous-dependencies": 0,
         "react/react-in-jsx-scope": 0,
         "@typescript-eslint/no-non-null-assertion": 0,
+        "react/no-children-prop": 0,
+        "react/no-unescaped-entities": 0,
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", "ts", "tsx"] }],
         "react-refresh/only-export-components": [
             "warn",
             { "allowConstantExport": true }
           ],
-
-        "indent": [
-            "error",
-            2
-        ],
-        "linebreak-style": [
-            "error",
-            "unix"
-        ],
-        "quotes": [
-            "error",
-            "double"
-        ],
-        "semi": [
-            "error",
-            "always"
-        ]
+        "no-empty": "warn",
+        "prefer-const": "warn",
+        "@typescript-eslint/no-non-null-asserted-optional-chain": "warn",
+        "@typescript-eslint/ban-ts-comment": "warn",
+        "indent": [ "error", 2 ],
+        "linebreak-style": [ "error", "unix" ],
+        "quotes": [ "error", "double" ],
+        "semi": [ "error", "always" ]
     }
 }
