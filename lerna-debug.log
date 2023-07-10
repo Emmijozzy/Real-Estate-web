@@ -1,0 +1,22 @@
+0 silly argv {
+0 silly argv   _: [ 'run' ],
+0 silly argv   lernaVersion: '7.1.1',
+0 silly argv   '$0': 'node_modules\\lerna\\dist\\cli.js',
+0 silly argv   script: 'start'
+0 silly argv }
+1 notice cli v7.1.1
+2 verbose packageConfigs Explicit "packages" configuration found in lerna.json. Resolving packages using the configured glob(s): ["packages/*"]
+3 verbose rootPath F:\lerna-mern-templa\lerna-template
+4 error Error: InvalidSymbol in F:\lerna-mern-templa\lerna-template\packages\backend\package.json at 8:39
+4 error [0m [90m  6 | [39m  "license": "MIT",[0m
+4 error [0m [90m  7 | [39m  "scripts": {[0m
+4 error [0m[31m[1m>[22m[39m[90m  8 | [39m    "start": "nodemon --watch --exec "ts-node src/index.ts""[0m
+4 error [0m [90m    | [39m                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+4 error [0m [90m  9 | [39m  },[0m
+4 error [0m [90m 10 | [39m  "devDependencies": {[0m
+4 error [0m [90m 11 | [39m    "@types/cors": "^2.8.13",[0m
+4 error
+4 error     at parseJson (F:\lerna-mern-templa\lerna-template\node_modules\nx\src\utils\json.js:25:15)
+4 error     at readJsonFile (F:\lerna-mern-templa\lerna-template\node_modules\nx\src\utils\fileutils.js:23:37)
+4 error     at F:\lerna-mern-templa\lerna-template\node_modules\nx\src\project-graph\utils\retrieve-workspace-files.js:32:46
+4 error     at Generator.next (<anonymous>)
